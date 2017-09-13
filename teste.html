@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<title>Café Completo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="Comida, Lanche, Lanchonete, Salgados, Pizza, Cafe, Almoço, Sopa, Shopping, Shopping Itaigara, Salvador, Bahia, Tropical Center, Pituba Parque Center">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/home/santorino/Área de Trabalho/site/imagens/imagem.jpeg");
+    min-height: 90%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">SOBRE</a>
+    <a href="#googleMap" class="w3-bar-item w3-button">CONTATO</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Aberto das 09:00h às 18:00h</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px"><br>CAFÉ COMPLETO</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br>CRUST PIZZA</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Quero ver o menu!</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:63px">MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Cafe');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Cafés</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Lanches');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Lanches</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Almoço');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Almoço</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Sopas');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Sopas</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Bebidas');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Bebidas</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Sobremesas');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Sobremesas</div>
+      </a>
+    </div>
+
+    <div id="Cafe" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Café Expresso</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.50</span></h1>
+      <p class="w3-text-grey">Café expresso tradicional, grãos selecionados, torra única</p>
+      <hr>
+   
+      <h1><b>Café Expresso Duplo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$6.50</span></h1>
+      <p class="w3-text-grey">Café expresso em dose dupla, 120ml</p>
+      <hr>
+      
+      <h1><b>Café Expresso Gourmet</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.30</span></h1>
+      <p class="w3-text-grey">Café expresso com chantily, acompanhado de pedaços de chocolate</p>
+      <hr>
+
+      <h1><b>Café Expresso Descafeinado</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+      <p class="w3-text-grey">Café expresso descafeinado</p>
+      <hr>
+
+      <h1><b>Média com Leite</b> <!--<span class="w3-tag w3-red w3-round">Hot!</span>!--><span class="w3-right w3-tag w3-dark-grey w3-round">$6.00</span></h1>
+      <p class="w3-text-grey">Café médio com leite</p>
+      <hr>
+
+      <h1><b>Macchiatto</b> <!--<span class="w3-tag w3-grey w3-round">New</span>!--><span class="w3-right w3-tag w3-dark-grey w3-round">$9.00</span></h1>
+      <p class="w3-text-grey">Café gourmet com creme e chantily</p>
+
+      <h1><b>Cappuccino</b> <!--<span class="w3-tag w3-grey w3-round">New</span>!--><span class="w3-right w3-tag w3-dark-grey w3-round">$8.00</span></h1>
+      <p class="w3-text-grey">Cappuccino aromatizado com canela</p>
+    </div>
+
+    <div id="Lanches" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Coxinha Simples</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+      <p class="w3-text-grey">Coxinha de frango simples</p>
+      <hr>
+   
+      <h1><b>Coxinha c/ catupiry</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
+      <p class="w3-text-grey">Coxinha de frango com catupiry</p>
+      <hr>
+      
+      <h1><b>Kibe</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+      <p class="w3-text-grey">Kibe árabe da chef</p>
+      <hr>
+
+      <h1><b>Enroladinho de quejo e presunto</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Enroladinho recheado com queijo mussarela e presunto, caprichado</p>
+
+      <h1><b>Enroladinho de salsicha</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Enroladinho recheado com queijo mussarela e salsicha</p>
+
+      <h1><b>Torta salgada</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Torta salgada recheada com frango e catypiry.</p>
+
+      <h1><b>Pastel de forno</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Pastel de forno recheado com frango desfiado</p>
+
+      <h1><b>Boliviano</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Salgado recheado com carne moída, uva passa, pimenta, canela e açúcar</p>
+
+      <h1><b>Croquete de camarão</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Salgado recheado com camarão e creme de camarão</p>
+
+       <h1><b>Folhado</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Massa folhada de queijo e presunto</p>
+
+      <h1><b>Saltenha</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Saltenha recheada com carne moída, uva passa e pimenta</p>
+
+      <h1><b>Esfirra de carne</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Esfirra recheada com carne moída temperada</p>
+
+      <h1><b>Esfirra de frango</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Esfirra recheada com frango disfiado.</p>
+
+      <h1><b>Pão delícia</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Pão delícia recheado com maionese</p>
+
+      <h1><b>Pãozinho de queijo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Porção com seis pães de queijo</p>
+    </div>
+
+    <div id="Almoço" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Feijoada</b> <span class="w3-tag w3-grey w3-round">Segunda Feira</span><span class="w3-right w3-tag w3-dark-grey w3-round">$12.00</span></h1>
+      <p class="w3-text-grey">Feijoada caprichada, acompanha uma poção de arroz e salada.</p>
+      <hr>
+   
+      <h1><b>Dobradinha</b> <span class="w3-tag w3-grey w3-round">Terça Feira</span><span class="w3-right w3-tag w3-dark-grey w3-round">$12.00</span></h1>
+      <p class="w3-text-grey">Dobradinha, acompanha porção de arroz e salada.</p>
+      <hr>
+      
+      <h1><b>Quiabada</b> <span class="w3-tag w3-grey w3-round">Quarta Feira</span><span class="w3-right w3-tag w3-dark-grey w3-round">$12.00</span></h1>
+      <p class="w3-text-grey">Quiabada, acompanha porção de arroz e salada.</p>
+      <hr>
+      
+      <h1><b>Cozido</b> <span class="w3-tag w3-grey w3-round">Quinta Feira</span><span class="w3-right w3-tag w3-dark-grey w3-round">$13.00</span></h1>
+      <p class="w3-text-grey">Cozido de batata doce, batata, repolho, chuchu, quiabo, maxixe, jiló, banana da terra, couve, calabresa, carne salgada, aipim, cenoura. Acompanha pirão.</p>
+
+      <h1><b>Comida Baiana</b> <span class="w3-tag w3-grey w3-round">Sexta Feira</span><span class="w3-right w3-tag w3-dark-grey w3-round">$12.00</span></h1>
+      <p class="w3-text-grey">Caruru, vatapá, feijão fradinho, farofa de dendê, xinxin de galinha, banana frita.</p>
+      <hr>
+    </div>
+
+    <div id="Sopas" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Caldo Verde</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.50</span></h1>
+      <p class="w3-text-grey">Sopa portuguesa caldo verde com couve e calabresa</p>
+      <hr>
+   
+      <h1><b>Canja de Galinha Duplo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$6.50</span></h1>
+      <p class="w3-text-grey">Sopa tradicional de canja de galinha</p>
+      <hr>
+      
+      <h1><b>Sopa de Legumes</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.30</span></h1>
+      <p class="w3-text-grey">Sopa tradicional de legumes</p>
+      <hr>
+
+      <h1><b>Caldo de Aipim</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+      <p class="w3-text-grey">Caldo tradicional de aipim</p>
+      <hr>
+
+      <h1><b>Caldo de Sururu</b> <!--<span class="w3-tag w3-red w3-round">Hot!</span>!--><span class="w3-right w3-tag w3-dark-grey w3-round">$6.00</span></h1>
+      <p class="w3-text-grey">Caldo tradicional de sururu</p>
+      <hr>
+    </div>
+
+<div id="Bebidas" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Água Mineral</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.50</span></h1>
+      <p class="w3-text-grey">Água mineral garrafa 500ml</p>
+      <hr>
+   
+      <h1><b>Água mineral s/ gás</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$6.50</span></h1>
+      <p class="w3-text-grey">Água mineral garrafa s/ gás</p>
+      <hr>
+      
+      <h1><b>Refrigerante Lata</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.30</span></h1>
+      <p class="w3-text-grey">Refrigerante lata 350ml</p>
+      <hr>
+
+      <h1><b>Refrigerante 300ml</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+      <p class="w3-text-grey">Refrigerante em copo 300ml</p>
+      <hr>
+
+      <h1><b>Suco de Laranja</b> <!--<span class="w3-tag w3-red w3-round">Hot!</span>!--><span class="w3-right w3-tag w3-dark-grey w3-round">$6.00</span></h1>
+      <p class="w3-text-grey">Suco de laranja em jarra 1 litro</p>
+      <hr>
+
+      <h1><b>Suco de Abacaxi</b> <!--<span class="w3-tag w3-grey w3-round">New</span>!--><span class="w3-right w3-tag w3-dark-grey w3-round">$9.00</span></h1>
+      <p class="w3-text-grey">Suco de abacaxi em jarra 1 litro</p>
+
+      <h1><b>Cerveja Long Neck</b> <!--<span class="w3-tag w3-grey w3-round">New</span>!--><span class="w3-right w3-tag w3-dark-grey w3-round">$8.00</span></h1>
+      <p class="w3-text-grey">Long neck Skol, Itaipava, Brahma, Corona e Heineken</p>
+
+      <h1><b>Coquetel de Frutas</b> <!--<span class="w3-tag w3-grey w3-round">New</span>!--><span class="w3-right w3-tag w3-dark-grey w3-round">$8.00</span></h1>
+      <p class="w3-text-grey">Coquetel royal de frutas com e sem álcool</p>
+    </div>
+
+<div id="Sobremesas" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Brigadeiro</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.50</span></h1>
+      <p class="w3-text-grey">Brigadeiro gourmet grande</p>
+      <hr>
+   
+      <h1><b>Casadinho</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$6.50</span></h1>
+      <p class="w3-text-grey">Casadinho gourmet grande</p>
+      <hr>
+      
+      <h1><b>Empada doce</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.30</span></h1>
+      <p class="w3-text-grey">Deliciosa empada recheada com doce de leite ou goiabada</p>
+      <hr>
+
+      <h1><b>Torta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+      <p class="w3-text-grey">Fatia de torta</p>
+      <hr>
+
+      <h1><b>Ambrosia</b> <!--<span class="w3-tag w3-grey w3-round">New</span>!--><span class="w3-right w3-tag w3-dark-grey w3-round">$9.00</span></h1>
+      <p class="w3-text-grey">Doce caseiro de ambrosia</p>
+    </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="Sobre">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Sobre</h1>
+    <p>O Café Completo é uma lanchonete com mais de 20 anos de tradição. Nasceu no shopping itaigara e após sua popularidade, cresceu também para o tropical center, próximo ao shopping passeo. O café completo é conhecido pela qualidade dos produtos e pela excelência no atendimento, com mesas para acomodar os clientes e um ambiente bastante acolhedor e confortável. </p>
+    <!--<p><strong>A cozinha</strong> Chef Regina<img src="/w3images/chef.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>!-->
+    <img src="/w3images/onepage_restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurante">
+    <h1><b>Horário de funcionamento</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Segunda à sexta das 09:00h até 18:00h</p>
+        <p>Sábado das 09:00h até 17:00h</p>
+      </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Contato -->
+<div class="w3-display-container w3-white w3-grayscale-min" id="contato">
+	<h1 class="w3-center w3-jumbo" style="margin-bottom:50px">CONTATO</h1>
+	<h2 class="w3-center w3-block" style="margin:bottom:50px"> Av Antonio Carlos Magalhães, 656, Itaigara, Salvador-BA<br>
+	Telefone: (71) 3353-4831
+	</h2><br>
+	<h3 class="w3-center w3-block" style="margin:bottom:50px"> Nos deixe uma mensagem!</h3>	
+		<form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nome" required name="Nome"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensagem" required name="Mensagem"></p>
+      <p><button class="w3-button w3-dark-grey w3-block" type="submit">ENVIAR MENSAGEM</button></p>
+    </form>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  &copy; Todos os direitos reservados
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkpL9rTeXgLkuLYhkljGODjRnSDJLQyOA" type="text/javascript"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
+
